@@ -994,7 +994,7 @@ def recog(args):
         js = json.load(f)["utts"]
     new_js = {}
 
-    if int("0"+args.multimodal)>0:
+    if int(args.multimodal)>0:
         load_inputs_and_targets = LoadInputsAndTargets(
             mode="multiasr",
             load_output=False,
